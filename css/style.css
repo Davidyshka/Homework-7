@@ -89,8 +89,8 @@ body {
   font-family: "Open-Sans", sans-serif;
 }
 
-.header-wrapper__item:not(:last-child) {
-  padding-right: 50px;
+.header-wrapper__item {
+  margin-right: 50px;
 }
 
 /* AXIT */
