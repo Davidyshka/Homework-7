@@ -113,8 +113,6 @@ body {
   position: relative;
   z-index: 2;
   color: #fff;
-  height: 100vh;
-
   display: flex;
   justify-content: space-between;
 }
@@ -219,7 +217,6 @@ body {
 
 .axit-form__item {
   font-family: "Open-Sans", sans-serif;
-  color: #bdbdbd;
   font-weight: 400;
   font-size: 14px;
   border: none;
@@ -304,16 +301,25 @@ body {
 .social-media i {
   font-size: 58px;
   color: #cccccc;
-  cursor: pointer;
+  position: relative;
 }
 .social-media i:not(:nth-child(7)) {
-  padding-right: 33px;
+  margin-right: 33px;
 }
 
 .social-media i:hover {
   color: #333;
   transition: all 0.3s;
 }
+
+.social-media a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  left: 0;
+}
+
 /* TABS */
 
 .tabs-wrapper {
@@ -554,71 +560,6 @@ body {
   line-height: 50px;
 }
 
-/* STYLISH */
-
-.stylish-wrapper {
-  background-image: url(../img/city.jpg);
-  width: 100%;
-  height: 442px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.stylish-wrapper::after {
-  content: "";
-  display: block;
-  opacity: 0.5;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.stylish-main__wrapper {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-  height: 442px;
-}
-
-.stylish-main__title {
-  font-size: 36px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  padding-top: 80px;
-  margin-bottom: 95px;
-}
-
-.stylish-main__subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 100px;
-}
-
-.stylish-main__btn {
-  display: block;
-  max-width: 370px;
-  height: 58px;
-  width: 100%;
-  align-self: center;
-  cursor: pointer;
-  background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.stylish-main__btn:hover {
-  border: 1px solid #ec7979;
-  color: #ec7979;
-  transition: all 0.5s;
-}
 /* CUSTOMERS */
 
 /* .custumers {
@@ -724,4 +665,198 @@ body {
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   color: #000;
+}
+
+/* STYLISH */
+
+.stylish-wrapper {
+  background-image: url(../img/city.jpg);
+  width: 100%;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 82px;
+}
+
+.stylish-wrapper::after {
+  content: "";
+  display: block;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.stylish-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  height: 442px;
+}
+
+.stylish-main__title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  padding-top: 80px;
+  margin-bottom: 95px;
+}
+
+.stylish-main__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 100px;
+}
+
+.stylish-main__btn {
+  display: block;
+  max-width: 370px;
+  height: 58px;
+  width: 100%;
+  align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.stylish-main__btn:hover {
+  border: 1px solid #ec7979;
+  color: #ec7979;
+  transition: all 0.5s;
+}
+/* CONTACT */
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact-wrapper {
+  text-align: center;
+}
+
+.contact-wrapper__title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 82px;
+  text-transform: uppercase;
+}
+
+.contact-wrapper__subtitle {
+  margin-bottom: 89px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #86878b;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.contact-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form input {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open-Sans", sans-serif;
+  max-width: 571px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.contact-form input:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.contact-form__message {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+  max-width: 571px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open-Sans", sans-serif;
+  height: 197px;
+  outline: none;
+  resize: none;
+  margin-bottom: 50px;
+}
+
+.contact-form__btn {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ec7979;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  max-width: 370px;
+  width: 100%;
+  height: 58px;
+  position: absolute;
+  bottom: -108px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.contact-form__btn:hover {
+  background-color: #ab4949;
+  transition: all 0.5s;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 164px;
+}
+
+.footer-links {
+  margin-bottom: 35px;
+}
+
+.footer-links i {
+  font-size: 39px;
+  color: #ccc;
+  position: relative;
+}
+
+.footer-links i:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-links a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.footer-company {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.5;
 }
