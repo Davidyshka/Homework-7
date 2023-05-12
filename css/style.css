@@ -45,6 +45,11 @@ body {
   z-index: 1000;
 }
 
+.header-home-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .header-container {
   max-width: 1170px;
   height: 75px;
