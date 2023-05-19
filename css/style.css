@@ -865,3 +865,164 @@ body {
   font-family: "Raleway", sans-serif;
   opacity: 0.5;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .axit {
+    min-height: 768px;
+  }
+
+  .axit-wrapper {
+    justify-content: space-between;
+  }
+  .axit-wrapper__one {
+    margin-left: 12%;
+  }
+  .axit-wrapper__two {
+    max-width: 398px;
+    max-height: 450px;
+    padding-right: 20px;
+  }
+  .axit-one__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .axit-one__subtitle {
+    font-size: 36px;
+  }
+
+  .axit-one__miniSubtitle {
+    font-size: 14px;
+  }
+
+  .fa-brands {
+    width: 48px;
+    height: 40px;
+  }
+
+  .header-title {
+    left: 15px;
+  }
+  .sol-main__info {
+    margin-left: 20px;
+  }
+  .sol__img {
+    width: 398.21px;
+    height: 385px;
+  }
+  .sol__title {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .sol__subtitle {
+    font-size: 14px;
+  }
+
+  .customers-manager__text {
+    max-width: 317px;
+  }
+
+  .contact-form__wrapper input {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .white-underline-left::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-container {
+    justify-content: space-around;
+  }
+  .header-wrapper {
+    display: none;
+  }
+
+  .header-title {
+    left: 6%;
+  }
+
+  .axit {
+    max-height: 1005px;
+    background-size: cover;
+    background-position: right;
+    padding-top: 0px;
+  }
+
+  .axit-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .axit-wrapper__one {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .axit-one__btn {
+    margin-bottom: 40px;
+  }
+
+  .axit-one__title {
+    display: none;
+  }
+
+  .axit-one__subtitle {
+    margin-top: 80px;
+  }
+  .axit-wrapper__two {
+    max-width: 288px;
+    max-height: 381px;
+    margin: 0 auto 50px auto;
+  }
+
+  .axit-two__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .burger {
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .burger-item {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .social-container {
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8efef;
+  }
+
+  .social-wrapper__title {
+    text-align: center;
+    padding: 35px 0 13px 0;
+  }
+
+  .social-wrapper__subtitle {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  .social-media {
+    padding-bottom: 50px;
+  }
+}
